@@ -22,7 +22,7 @@ class SimpleComponent extends React.Component {
   render() {
     return(
       <div>
-        <button onClick={handleClick()}>{state.mood}</button>
+        <button onClick={this.handleClick()}>{state.mood}</button>
       </div>
     )
   }
