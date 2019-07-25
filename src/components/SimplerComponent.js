@@ -3,8 +3,7 @@ import React from 'react'
 
 const SimplerComponent = props =>
   <div>
-    <p>I am just happy</p>
-    <button onClick={props.handleClick}>Click Me</button>
+    <button onClick={props.handleClick} value={this.props.value}>I am just happy</button>
   </div>
 
 export default SimplerComponent
