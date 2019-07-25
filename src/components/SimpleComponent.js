@@ -6,15 +6,15 @@ class SimpleComponent extends React.Component {
     mood: "happy"
   }
 
-  handleClick = (event) => {
+  handleClick = () => {
     if (this.state.mood === "happy") {
       this.setState({
-        mood: event.target.value
+        mood: "sad"
       })
     }
     else if (this.state.mood === "sad") {
       this.setState({
-        mood: event.target.value
+        mood: "happy"
       })
     }
   }
@@ -22,7 +22,7 @@ class SimpleComponent extends React.Component {
   render() {
     return(
       <div>
-        <button onClick={this.handleClick({this.state.mood})}>{this.state.mood}</button>
+        <button onClick={this.handleClick}>{this.state.mood}</button>
       </div>
     )
   }
