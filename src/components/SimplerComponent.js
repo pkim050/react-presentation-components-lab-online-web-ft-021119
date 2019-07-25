@@ -1,5 +1,5 @@
 // Code SimplerComponent Here
-const SimplerComponent = props => 
+const SimplerComponent = props =>
   <div>
     <p>I am just happy</p>
     <button onClick={this.handleClick}>Click Me</button>
