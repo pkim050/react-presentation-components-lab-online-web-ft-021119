@@ -7,7 +7,6 @@ class SimpleComponent extends React.Component {
   }
 
   handleClick = event => {
-    event.preventDefault()
     if (this.state.mood === "happy") {
       this.setState({
         mood: "sad"
