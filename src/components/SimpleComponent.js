@@ -6,10 +6,24 @@ class SimpleComponent extends React.Component {
     mood: "happy"
   }
 
+  handleClick = event => {
+    if (this.state.mood === "happy") {
+      this.setState({
+        mood: "sad"
+      })
+    }
+    else if (this.state.mood === "sad") {
+      this.setState({
+        mood: "happy"
+      })
+    }
+  }
+
   render() {
     return(
       <div>
-        <p>{this.state.mood}</p>
+        <p>Current Mood: {this.state.mood}</p>
+        <button onClick={this.handleClick}>Click me to change my current mood!</button>
       </div>
     )
   }
