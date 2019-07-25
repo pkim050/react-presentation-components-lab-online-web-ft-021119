@@ -7,16 +7,16 @@ class SimpleComponent extends React.Component {
   }
 
   handleClick = () => {
-    console.log(this.state.mood)
     if (this.state.mood === "happy") {
-      this.setState({
+      console.log("happy state")
+      state = {
         mood: "sad"
-      })
+      }
     }
     else if (this.state.mood === "sad") {
-      this.setState({
+      state = {
         mood: "happy"
-      })
+      }
     }
   }
 
