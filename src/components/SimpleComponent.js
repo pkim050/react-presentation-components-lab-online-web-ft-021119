@@ -2,8 +2,11 @@
 import React from 'react'
 
 class SimpleComponent extends React.Component {
-  state = {
-    mood: "happy"
+  constructor() {
+    super()
+    this.state = {
+      mood: "happy"
+    }
   }
 
   handleClick = () => {
